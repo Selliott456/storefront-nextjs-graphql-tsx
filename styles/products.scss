@@ -1,0 +1,59 @@
+.products {
+  font-family: "Raleway", sans-serif;
+  &__title {
+    margin: 26px 6px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  width: 370px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &__body {
+    margin: 20px;
+    background-color: rgb(238, 238, 237);
+    width: 90%;
+    font-size: 20px;
+  }
+  &__title {
+    margin: 16px;
+  }
+  &__subtitle {
+    margin: 16px;
+  }
+  &__img {
+    max-width: 150px;
+    margin-top: 20px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 600px;
+    flex-direction: row;
+    &__img {
+      max-height: 400px;
+      margin: 20px;
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  .card {
+    width: 900px;
+    flex-direction: row;
+  }
+}

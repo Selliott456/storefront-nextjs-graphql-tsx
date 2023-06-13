@@ -1,0 +1,10 @@
+query productByKeyword($name: String!) {
+  product(name: $name) {
+    title
+    keyword
+    price
+    description
+    category
+    image
+  }
+}
